@@ -1,0 +1,62 @@
+/* pages/valid/valid.wxss */
+.page{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: 1000;
+}
+
+.weui-dialog{
+    background-color: #fff;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    margin: 20% 10% 0;
+    padding-bottom: 10px;
+}
+
+.weui-title{
+    border-bottom: 1px solid #F0F0F0;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.weui-dialog__bd{
+    text-align: center;
+    line-height: 30px;
+    margin: 10px auto;
+}
+
+.weui-cell__bd{
+    position: relative;
+    height: 40px;
+}
+
+.weui-success{
+    background: #4B74F4;
+    margin: 20px;
+    color: #fff;
+}
+
+.weui-yzm_box{
+    margin: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+}
+
+.weui-yzm{
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+
+

@@ -1,0 +1,73 @@
+/* pages/me/msg/msg.wxss */
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #fff;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.my_msg{
+    max-width: 100%;
+    height: 200px;
+    background-color: #4B74F4;
+    text-align: center;
+}
+
+.my_img{
+    padding-top: 30px;
+}
+
+.user_icon{
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.user_name{
+    color: #fff;
+    font-size: 14px;
+}
+
+.product_type .weui-cell__bd{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.product_cells{
+    position: relative;
+    font-size: 16px;
+    color: #616161;
+}
+
+.product_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.product_cell{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    -webkit-display: -webkit-box;
+    -webkit-display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    background-color: #fff;
+}

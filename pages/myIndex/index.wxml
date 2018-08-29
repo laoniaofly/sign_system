@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="body_view">
+        <view class="group">
+            <image src="../../assets/images/index/crm.png" class="logo"></image>
+        </view>
+        <view class="logoText">
+            <text>{{logoText}}</text>
+        </view>
+        <view class="declaration">
+            <text>{{declaration}}</text>
+        </view>
+        <view class="attention" bindtap="attentionTo">
+            <text>点击关注</text>
+        </view>
+    </view>
+
+</view>

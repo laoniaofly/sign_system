@@ -1,0 +1,43 @@
+/* pages/valid/validIndex/validIndex.wxss */
+.page{
+  background-color: #fff;
+}
+.weui-title{
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.weui-cell{
+  padding: 10px 15px;
+}
+
+.weui-label{
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+.weui-input{
+  font-size: 13px;
+  color: #000;
+}
+
+.weui-cell__bd{
+  position: relative;
+}
+
+.weui-yzm{
+  position: absolute;
+  top: 2px;
+  right: 0;
+  margin-top: 0;
+}
+
+.weui-yzm,.weui-login{
+  background-color: #4B74F4;
+  color: #fff;
+}
+
+.weui-login{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}

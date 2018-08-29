@@ -1,0 +1,98 @@
+<!--pages/order/detail/detail.wxml-->
+<view class="page" style="background-color: #f8f8f8">
+    <scroll-view scroll-y="true" style="margin-bottom: 66px;">
+        <views class="detail_data">
+            <view class="weui-cells_after-title weui-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">标题</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" disabled value="{{detail_data.name}}"/>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells_after-title weui-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">单据编号</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" disabled value="{{detail_data.billsNo}}"/>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells_after-title weui-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">收货人</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" disabled value="{{detail_data.receiver}}"/>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells_after-title weui-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">收货人电话</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" disabled value="{{detail_data.phone}}"/>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells_after-title weui-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">项目名称</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" disabled value="{{detail_data.project.name}}"/>
+                    </view>
+                </view>
+            </view>
+        </views>
+
+        <view class="product_list">
+            <view class="product_title" style="text-align: left;">
+                <text>产品明细</text>
+            </view>
+            <view class="weui-panel" style="margin-top: 0;">
+                <view class="weui-panel__bd">
+                    <view class="weui-media-box weui-media-box_small-appmsg">
+                        <view class="weui-cells weui-cells_in-small-appmsg">
+                            <view class="weui-cell weui-cell_access" wx:for="{{products}}" wx:key="">
+                                <view class="weui-cell__hd"><image src="{{item.icon20}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                                <view class="weui-cell__bd weui-cell_primary">
+                                    <view>{{item.name}}</view>
+                                </view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <navigator url="" style="background-color: #fff;border: none">
+                <view class="access weui-cell_link product_type" bindtap="toProductList">
+                    <view class="weui-cell__bd">产品种类：<text style="color: #f00;">{{products.length}}</text></view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access">查看详情</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="page_remark">
+            <view class="remark_title">备注</view>
+            <view class="remark_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus facere minima quibusdam reiciendis, sed unde voluptatum! Commodi consectetur, distinctio dolores ducimus earum error et itaque nesciunt, odit velit veniam.</view>
+        </view>
+
+        <view class="fail_standard">
+            <view class="fail_title">未达标现场照片</view>
+            <scroll-view scroll-x="true" scroll-left="20" style="white-space: nowrap;">
+                <image wx:for="{{img_arr}}" wx:key="" wx:for-item="{{item}}" src="../../../assets/images/order/cp-01.png" class="fail_img"></image>
+            </scroll-view>
+        </view>
+    </scroll-view>
+    <view class="sign_btn">
+        <button class="weui-btn check_list">核对清单</button>
+    </view>
+</view>

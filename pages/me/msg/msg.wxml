@@ -1,0 +1,44 @@
+<!--pages/me/msg/msg.wxml-->
+<view>
+    <!--<scroll-view scroll-x="false" scroll-y="false" class="my_msg">
+        <image src="{{userImg}}" class="user_icon"></image>
+        <view class="user_name">
+            <text>{{username}}</text>
+        </view>
+    </scroll-view>-->
+
+    <view class="my_msg">
+        <button wx:if="{{!hasUserInfo && canIUse}}"> 获取头像昵称 </button>
+        <view wx:else class="my_img">
+            <image src="{{userInfo.avatarUrl}}" background-size="cover" style="width: 50px;height: 50px;-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;"></image>
+            <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+
+
+    <view class="weui-cells_after-title" style="margin-top: 20px;">
+        <view class="product-panel" style="margin-top: 0;">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells_in-small-appmsg product_cells" style="border-bottom: 1px solid #E8E8E8;">
+                        <navigator class="weui-cell_access product_cell" bindtap="toOrder">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" class="product_img" /></view>
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>我的订单</view>
+                            </view>
+                        </navigator>
+                    </view>
+                    <view class="weui-cells_in-small-appmsg product_cells">
+                        <navigator class="product_cell" bindtap="toReturnOrder">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" class="product_img" /></view>
+                            <view class="">
+                                <view>我的退货单</view>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

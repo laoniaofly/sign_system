@@ -1,0 +1,65 @@
+<!--pages/order/list/list.wxml-->
+<view class="page" style="background-color: #f8f8f8">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar" style="background-color: #fff">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick" data-item="{{item}}">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+            </view>
+            <scroll-view class="page__list" scroll-top="{{scrollTop}}" scroll-y="true" bindscrolltoupper="doRefresh"
+                         bindscrolltolower="loading" style="height: {{scrollHeight}}px;" wx:if="{{orderList.length > 0}}">
+                <view style="width: 100%;height: 51px;background-color: #fff;"></view>
+                <view class="weui-form-preview" wx:for="{{orderList}}" wx:key="" wx:for-item="item" bindtap="toDetail" data-item="{{item}}">
+                    <view class="weui-form-preview__hd" style="padding: 0 15px;">
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label" style="font-size: 16px;color: #000;">{{item.name}}</view>
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">单据编号</view>
+                            <view class="weui-form-preview__value">{{item.billsNo}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">项目名称</view>
+                            <view class="weui-form-preview__value">{{item.project.name}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">项目类型</view>
+                            <view class="weui-form-preview__value">{{item.project.type}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">发货日期</view>
+                            <view class="weui-form-preview__value">{{item.beginDate}}</view>
+                        </view>
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">签收日期</view>
+                            <view class="weui-form-preview__value">{{item.signDate}}</view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+            <view class="no_data" wx:if="{{orderList.length == 0}}">
+                <view style="width: 100%;height: 51px;background-color: #fff;"></view>
+                <view class="empty"><image src="../../../assets/images/request/ic_empty.png" style="width:100px;height:100px"></image></view>
+                <view><text class="text">暂无数据</text></view>
+            </view>
+            <!--<view class="data_wrong">
+                <view style="width: 100%;height: 51px;background-color: #fff;"></view>
+                <view class="empty"><image src="../../../assets/images/request/ic_wrong.png" style="width:100px;height:100px"></image></view>
+                <view><text class="text">网络请求异常</text></view>
+            </view>-->
+        </view>
+    </view>
+
+    <!--<view class="page__bd loadmore" wx:if="{{isloading == true}}">
+        <view class="weui-loadmore">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载...</view>
+        </view>
+    </view>-->
+
+</view>

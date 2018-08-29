@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/list/list",
+    "pages/order/detail/detail",
+    "pages/me/msg/msg",
+    "pages/returnOrder/list/list",
+    "pages/returnOrder/detail/detail",
+    "pages/valid/valid/valid",
+    "pages/valid/validIndex/validIndex",
+    "pages/order/product/list/list",
+    "pages/order/product/detail/detail",
+    "pages/order/product/refuse/refuse",
+    "pages/myIndex/index",
+    "pages/order/product/sign/sign"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#4B74F4",
+    "navigationBarTitleText": "身份验证",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#666",
+    "borderStyle": "#fff",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/myIndex/index",
+        "iconPath": "assets/images/index/homepage-outline.png",
+        "selectedIconPath": "assets/images/index/homepage.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/list/list",
+        "iconPath": "assets/images/index/addressbook-outline.png",
+        "selectedIconPath": "assets/images/index/addressbook.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/me/msg/msg",
+        "iconPath": "assets/images/index/personal-outline.png",
+        "selectedIconPath": "assets/images/index/personal.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

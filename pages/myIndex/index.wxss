@@ -1,0 +1,49 @@
+/**myIndex.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.body_view {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+.logoText,.declaration,.attention {
+    text-align: center;
+    font-size: 14px;
+}
+.logoText {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+.logoText {
+    margin-bottom: 30px;
+}
+.attention{
+    margin-top: 50px;
+    color: #4EB439;
+    font-weight: 700;
+}

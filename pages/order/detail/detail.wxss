@@ -1,0 +1,94 @@
+/* pages/order/detail/detail.wxss */
+.page{
+    margin-bottom: 80px;
+}
+
+.weui-title{
+    position: relative;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.41176471;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.weui-label{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.weui-input{
+    font-size: 14px;
+}
+
+.weui-cell_input{
+    padding: 10px 15px;
+}
+
+.product_title{
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.sign_btn{
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    text-align: center;
+}
+
+.sign_btn button{
+    margin: 0 20px;
+}
+
+.weui-cell_primary{
+    font-size: 12px;
+    color: #000;
+}
+
+.product_type{
+    position:relative;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.page_remark,.fail_standard{
+    padding: 10px 15px;
+    font-size: 0;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.remark_title,.fail_title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.remark_content{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.fail_img{
+    padding: 10px 2px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.check_list{
+    color: #fff;
+    background-color: #4B74F4;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+

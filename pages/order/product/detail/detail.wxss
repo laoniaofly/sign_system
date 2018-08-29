@@ -1,0 +1,64 @@
+/* pages/order/product/detail/detail.wxss */
+.weui-title{
+    position: relative;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.41176471;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.weui-title:last-child{
+    border: none;
+}
+
+.weui-label{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.weui-input{
+    font-size: 14px;
+    text-align: right;
+}
+
+.weui-cell_input{
+    padding: 10px 15px;
+}
+
+/**      产品样式      **/
+
+.product-panel{
+    background-color: #F8F8F8;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.product_type .weui-cell__bd{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.product_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px
+}
+
+.product_cells{
+    position: relative;
+    font-size: 16px;
+    color: #616161;
+}
+
+.product_cell{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    -webkit-display: -webkit-box;
+    -webkit-display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    margin: 10px 0;
+    background-color: #fff;
+}

@@ -1,0 +1,33 @@
+/* pages/order/list/list.wxss */
+.weui-form-preview{
+    margin: 10px 0;
+}
+
+.weui-form-preview__item{
+    line-height: 33px;
+}
+
+.weui-navbar__item.weui-bar__item_on{
+    color: #4B74F4;
+}
+
+.weui-navbar{
+    position: fixed;
+    top: 0;
+}
+
+.no_data,.data_wrong{
+    text-align: center;
+    background: #F8F8F8;
+}
+
+.empty{
+    padding-top: 40%;
+}
+
+.text{
+    font-size: 14px;
+    color: #646464 !important;
+    line-height: 1;
+}
+

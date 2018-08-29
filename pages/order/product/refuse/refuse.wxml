@@ -1,0 +1,35 @@
+<!--pages/order/refuse/refuse.wxml-->
+<view class="page">
+    <scroll-view scroll-y="true">
+        <view class="weui-me-title"><text style="color: #f00;">* </text>{{reason}}</view>
+        <view class="cell weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 10.2em;font-size: 14px;" />
+                    <view class="weui-textarea-counter" style="font-size: 14px;">限200字以内</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-uploader">
+            <view class="weui-uploader__hd">
+                <view class="weui-uploader__title"><text style="color: #f00;">* </text>未达标现场照片</view>
+            </view>
+            <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                    <view class="weui-uploader__file weui-uploader__file_status">
+                        <image class="weui-uploader__img" src="../../../../assets/images/order/pic_160.png" mode="aspectFill" />
+                        <view class="weui-uploader__file-content">50%</view>
+                    </view>
+                </view>
+                <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="weui-btn-area">
+        <button class="weui-btn">提交并生成退货单</button>
+    </view>
+    <view class="back_tips"><image src="../../../../assets/images/others/icon_wxts.png" class="back_tips_img"></image>{{backtips}}需要客服和工厂审核，请耐心等待。</view>
+</view>

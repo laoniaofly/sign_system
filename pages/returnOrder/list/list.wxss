@@ -1,0 +1,8 @@
+/* pages/order/list/list.wxss */
+.weui-form-preview{
+    margin: 10px 0;
+}
+
+.weui-form-preview__item{
+    line-height: 33px;
+}

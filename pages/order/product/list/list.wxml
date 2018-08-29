@@ -1,0 +1,29 @@
+<!--pages/order/product/list/list.wxml-->
+<view class="page">
+    <view class="product_list">
+        <view class="access product_type">
+            <view class="weui-cell__bd">产品种类：<text style="color: #f00;">{{products.length}}</text></view>
+        </view>
+        <view class="product-panel" style="margin-top: 0;">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells_in-small-appmsg product_cells">
+                        <navigator class="weui-cell_access product_cell" wx:for="{{products}}" wx:key="" bindtap="toDetail" data-item="{{item}}">  <!--hover-class="weui-cell_active"-->
+                            <view class="weui-cell__hd"><image src="{{item.icon20}}" class="product_img" /></view>
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>{{item.name}}</view>
+                            </view>
+                            <view class="weui-cell__ft">x{{item.amount}}</view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-btn-area">
+        <view class="btn_box" style="position: relative">
+            <button class="weui-btn" style="width: 30%;background-color: #6CA3F6;" bindtap="refuseSign">拒签</button>
+            <button class="weui-btn" style="width: 70%;background-color: #4878E6;" bindtap="sign">签收</button>
+        </view>
+    </view>
+</view>

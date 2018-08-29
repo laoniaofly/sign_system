@@ -1,0 +1,84 @@
+/* pages/order/sign/sign.wxss */
+.product_type{
+    position:relative;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.product-panel{
+    background-color: #F8F8F8;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.product_type .weui-cell__bd{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.product_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px
+}
+
+.product_cells{
+    position: relative;
+    font-size: 16px;
+    color: #616161;
+}
+
+.product_cell{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    -webkit-display: -webkit-box;
+    -webkit-display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.weui-cell__ft{
+    line-height: 30px;
+}
+
+.caculate_img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.ui-input{
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.sign_btn{
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    text-align: center;
+}
+
+.sign_btn button{
+    margin: 0 20px;
+}
+
+.weui-btn{
+    background-color: #4B74F4;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+}

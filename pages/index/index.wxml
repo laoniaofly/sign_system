@@ -1,0 +1,47 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+  <view class="weui-cells_after-title weui-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入姓名" type="text" maxlength="11"/>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells_after-title weui-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">职务</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入职务" type="text" maxlength="11"/>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells_after-title weui-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系电话</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入联系电话" type="number" maxlength="11"/>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells_after-title weui-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">验证码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入验证码" type="number" maxlength="6"/>
+        <button class="weui-btn mini-btn weui-yzm" size="mini" style="padding: 0 0.5rem;">获取验证码</button>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area" style="margin-top: 70%;" bindtap="login">
+    <button class="weui-btn weui-login">去登录</button>
+  </view>
+</view>

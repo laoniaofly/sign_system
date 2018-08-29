@@ -1,0 +1,50 @@
+<!--pages/order/product/detail/detail.wxml-->
+<view class="page">
+    <view class="product-panel" style="margin-top: 0;">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_small-appmsg">
+                <view class="weui-cells_in-small-appmsg product_cells">
+                    <view class="weui-cell_access product_cell">  <!--hover-class="weui-cell_active"-->
+                        <view class="weui-cell__hd"><image src="{{product.icon20}}" class="product_img" /></view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>{{product.name}}</view>
+                        </view>
+                        <!--<view class="weui-cell__ft">{{product.amount}}</view>-->
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <views class="detail_data">
+        <view class="weui-cells_after-title weui-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">应签数量(㎡)</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" disabled value="{{product.amount}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells_after-title weui-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">实签数量(㎡)</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" disabled value="{{product.relAmount}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells_after-title weui-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">退回数量(㎡)</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" disabled value="{{product.backAmount}}"/>
+                </view>
+            </view>
+        </view>
+    </views>
+</view>

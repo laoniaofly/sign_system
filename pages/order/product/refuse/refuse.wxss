@@ -1,0 +1,45 @@
+/* pages/order/refuse/refuse.wxss */
+.weui-me-title{
+    padding: 10px 15px 0;
+    font-size: 14px;
+    color: #484848;
+    background-color: #fff;
+}
+
+.weui-uploader{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+.weui-uploader__hd{
+    font-size: 14px;
+}
+
+.weui-btn-area{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.weui-btn{
+    background-color: #4B74F4;
+    color: #fff;
+    margin: 10px 20px 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.back_tips{
+    padding: 10px 15px 0;
+    font-size: 14px;
+}
+
+.back_tips_img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
